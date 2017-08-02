@@ -1,0 +1,148 @@
+{
+	"variables": [],
+	"info": {
+		"name": "NODE CMS",
+		"_postman_id": "3e8f2f4b-5eb9-3c9c-477f-a9058ae8710e",
+		"description": "",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "CREATE Page",
+			"request": {
+				"url": "http://localhost:3000/pages",
+				"method": "POST",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/json",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\ntitle:First title\ncontent:content goes here\n}"
+				},
+				"description": "POST call for creating page"
+			},
+			"response": []
+		},
+		{
+			"name": "GET Specific page",
+			"request": {
+				"url": "http://localhost:3000/pages/5982004c769b9e2123d6fc85",
+				"method": "GET",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/json",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\ntitle:First title\ncontent:content goes here\n}"
+				},
+				"description": "GET call for a specific page"
+			},
+			"response": []
+		},
+		{
+			"name": "GET All Pages",
+			"request": {
+				"url": "http://localhost:3000/pages",
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": "",
+						"disabled": true
+					},
+					{
+						"key": "Accept",
+						"value": "application/json",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "name",
+							"value": "Arslan Khan",
+							"type": "text"
+						},
+						{
+							"key": "badge",
+							"value": "111",
+							"type": "text"
+						},
+						{
+							"key": "isloved",
+							"value": "0",
+							"type": "text"
+						},
+						{
+							"key": "dob",
+							"value": "1/1/1988",
+							"type": "text"
+						}
+					]
+				},
+				"description": "GET call for all pages"
+			},
+			"response": []
+		},
+		{
+			"name": "DELETE Page",
+			"request": {
+				"url": "http://localhost:3000/pages/edit/5981ff407ce6762106fdd775",
+				"method": "DELETE",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/json",
+						"description": ""
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"title\": \"Dynamics yoyo\",\n\t\"content\": \"Let's go!\",\n\t\"isPublished\": true\n}"
+				},
+				"description": "Delete call"
+			},
+			"response": []
+		},
+		{
+			"name": "UPDATE Page",
+			"request": {
+				"url": "http://localhost:3000/pages/edit/5982004c769b9e2123d6fc85",
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/json",
+						"description": ""
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"title\": \"Dynamics yoyo\",\n\t\"content\": \"Let's go!\",\n\t\"isPublished\": false\n}"
+				},
+				"description": "PUT call for page update"
+			},
+			"response": []
+		}
+	]
+}
