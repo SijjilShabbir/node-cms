@@ -143,6 +143,88 @@
 				"description": "PUT call for page update"
 			},
 			"response": []
+		},
+		{
+			"name": "GET specific meta information",
+			"request": {
+				"url": "http://localhost:3000/meta/59821499af9da022b8133f68",
+				"method": "GET",
+				"header": [],
+				"body": {},
+				"description": "GET specific meta information"
+			},
+			"response": []
+		},
+		{
+			"name": "POST Meta information",
+			"request": {
+				"url": "http://localhost:3000/meta",
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"entityID\": 1,\n\t\"metaKey\": \"some_key\",\n\t\"metaValue\": \"<p>Hellow world!</p>\",\n\t\"metaPosition\": 32\n}"
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "GET All meta information",
+			"request": {
+				"url": "http://localhost:3000/meta/",
+				"method": "GET",
+				"header": [],
+				"body": {},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "UPDATE Meta information using PUT",
+			"request": {
+				"url": "http://localhost:3000/meta/edit/59821499af9da022b8133f68",
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"entityID\": 11,\n\t\"metaKey\": \"some_updated_key\",\n\t\"metaValue\": \"<p>Hellow world!</p>\",\n\t\"metaPosition\": 23\n}"
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "DELETE Meta information",
+			"request": {
+				"url": "http://localhost:3000/meta/edit/59821525af9da022b8133f6a",
+				"method": "DELETE",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"entityID\": 1,\n\t\"metaKey\": \"some_key\",\n\t\"metaValue\": \"<p>Hellow world!</p>\",\n\t\"metaPosition\": 32\n}"
+				},
+				"description": ""
+			},
+			"response": []
 		}
 	]
 }
