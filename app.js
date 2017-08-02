@@ -9,12 +9,14 @@ var bodyParser = require('body-parser');
 var db = require('./model/db');
 var blob = require('./model/blobs');
 var page = require('./model/pages');
+var meta = require('./model/meta');
 
 // Routes declaration
 var index = require('./routes/index');
 var users = require('./routes/users');
 var blobs = require('./routes/blobs');
 var pages = require('./routes/pages');
+var metas = require('./routes/meta');
 
 var app = express();
 
@@ -36,6 +38,7 @@ app.use('/', index);
 app.use('/users', users);
 app.use('/blobs', blobs);
 app.use('/pages', pages);
+app.use('/meta', metas);
 
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {
