@@ -5,13 +5,16 @@ var logger = require('morgan');
 var cookieParser = require('cookie-parser');
 var bodyParser = require('body-parser');
 
-// DB include
+// Model declarations
 var db = require('./model/db');
 var blob = require('./model/blobs');
+var page = require('./model/pages');
 
+// Routes declaration
 var index = require('./routes/index');
 var users = require('./routes/users');
 var blobs = require('./routes/blobs');
+var pages = require('./routes/pages');
 
 var app = express();
 
@@ -32,6 +35,7 @@ console.log('Server running on: http://localhost:3000');
 app.use('/', index);
 app.use('/users', users);
 app.use('/blobs', blobs);
+app.use('/pages', pages);
 
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {
