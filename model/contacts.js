@@ -5,7 +5,10 @@ var contactQueries = new mongoose.Schema({
     email: String,
     phone: Number,
     message: String,
-    date: Date.now()
+    date: {
+        type: Date,
+        default: Date.now()
+    }
 });
 
 mongoose.model('Contact', contactQueries);

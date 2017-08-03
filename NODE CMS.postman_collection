@@ -225,6 +225,121 @@
 				"description": ""
 			},
 			"response": []
+		},
+		{
+			"name": "CREATE Contact",
+			"request": {
+				"url": "http://localhost:3000/contact",
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"name\": \"Arslan Khan\",\n\t\"email\": \"aqkhan@iintellect.co.uk\",\n\t\"phone\": 923000501330,\n\t\"message\": \"Inquiry on Redsqware website by A Q Khan\"\n}"
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "UPDATE Contact using PUT",
+			"request": {
+				"url": "http://localhost:3000/contact/edit/598259c7ffd5dd24e8f77fbd",
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"name\": \"Salman Qamar Khan\",\n\t\"email\": \"salman@iintellect.co.uk\",\n\t\"phone\": 923335036736,\n\t\"message\": \"Inquiry on Redsqware website by Salu\"\n}"
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "GET specific contact",
+			"request": {
+				"url": "http://localhost:3000/contact/598256bd3f37c424b0fca6c6",
+				"method": "GET",
+				"header": [],
+				"body": {},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "GET all contacts",
+			"request": {
+				"url": "http://localhost:3000/contact/",
+				"method": "GET",
+				"header": [],
+				"body": {},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "DELETE Contact",
+			"request": {
+				"url": "http://localhost:3000/contact/edit/59825982ffd5dd24e8f77fbc",
+				"method": "DELETE",
+				"header": [],
+				"body": {},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "GET All SEO tags",
+			"request": {
+				"url": "localhost:3000/seotags",
+				"method": "GET",
+				"header": [],
+				"body": {},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "CREATE SEO Tag",
+			"request": {
+				"url": "localhost:3000/seotags",
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"pageID\": 1,\n\t\"tags\": {\n\t\t\"title\": \"Design and development studio\",\n\t\t\"keywords\": \"design,development,philidelphia\",\n\t\t\"robots\": \"noindex, nofollow\",\n\t\t\"ogLocale\": \"en_PA\",\n\t\t\"author\": \"A Q Khan\"\n\t}\n}"
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "GET a specific SEO Tag",
+			"request": {
+				"url": "localhost:3000/seotags/5982860d1cdd0326d918feb3",
+				"method": "GET",
+				"header": [],
+				"body": {},
+				"description": ""
+			},
+			"response": []
 		}
 	]
 }
