@@ -1,6 +1,10 @@
 var mongoose = require('mongoose');
 
 var seoTagsSchema = new mongoose.Schema({
+    _creator: {
+        type: String,
+        ref: 'Page'
+    },
     pageID: Number,
     tags: [{
         title: {

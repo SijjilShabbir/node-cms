@@ -29,7 +29,6 @@ router.route('/')
                 console.log('Pages not found: ' + err);
             }
             else {
-                console.log(pages);
                 res.format({
                     json: function() {
                         res.json(pages);

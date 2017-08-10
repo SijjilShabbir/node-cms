@@ -71,13 +71,23 @@ router.put('/edit/:id', function(req, res, next){
 
 router.delete('/edit/:id', function(req, res, next){
     mongoose.model('SeoTag').findById(req.params.id, function(err, seoTag){
-        seoTag.remove(function(err, seoTag){
-            res.format({
-                json: function(){
-                    res.json(seoTag);
+        if (err) {
+            console.log(err);
+        }
+        else {
+            seoTag.remove(function(err, seoTag){
+                if (err) {
+                    console.log(err);
+                }
+                else {
+                    res.format({
+                        json: function(){
+                            res.json(seoTag);
+                        }
+                    });
                 }
             });
-        });
+        }
     });
 });
 
