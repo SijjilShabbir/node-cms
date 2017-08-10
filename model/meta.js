@@ -1,6 +1,10 @@
 var mongoose = require('mongoose');
 
 var metaSchema = new mongoose.Schema({
+    _creator: {
+        type: String,
+        ref: 'Page'
+    },
     entityID: Number,
     metaKey: String,
     metaValue: String,

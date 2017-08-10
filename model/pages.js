@@ -1,4 +1,5 @@
-var mongoose = require('mongoose');
+var mongoose = require('mongoose'),
+    Schema = mongoose.Schema;
 
 var pageSchema = new mongoose.Schema({
     title: String,
@@ -7,10 +8,16 @@ var pageSchema = new mongoose.Schema({
         type: Date,
         default: Date.now()
     },
-    meta: [{
-        type: Number
-    }],
-    isPublished: Boolean
+    meta: [],
+    seoTags: [],
+    inNav: {
+        type: Boolean,
+        default: true
+    },
+    isPublished: {
+        type: Boolean,
+        default: true
+    }
 });
 
 // Declare schema
