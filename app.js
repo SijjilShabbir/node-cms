@@ -37,6 +37,8 @@ var corsOptions = {
     origin: 'https://aqkhan.github.io/'
 };
 
+app.options('*', cors());
+
 // Enable all URLs
 app.use(function(req, res, next) {
     res.header("Access-Control-Allow-Origin", "*");
