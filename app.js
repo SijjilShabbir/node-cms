@@ -39,7 +39,7 @@ var corsOptions = {
 
 // Enable multiple domains origin
 app.use(function(req, res, next){
-    var whitelist = ['localhost:4200', '', 'aqkhan.github.io'];
+    var whitelist = ['localhost:4200', 'https://aqkhan.github.io/'];
     var host = req.get('host');
 
     whitelist.forEach(function(val, key){
