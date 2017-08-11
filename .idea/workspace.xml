@@ -1,7 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="db0b993e-43cd-4224-9890-03736632c214" name="Default" comment="" />
+    <list default="true" id="db0b993e-43cd-4224-9890-03736632c214" name="Default" comment="">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app.js" afterPath="$PROJECT_DIR$/app.js" />
+    </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
     <ignored path="$PROJECT_DIR$/tmp/" />
@@ -17,8 +19,8 @@
       <file leaf-file-name="app.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="138">
-              <caret line="36" column="81" lean-forward="false" selection-start-line="36" selection-start-column="81" selection-end-line="36" selection-end-column="81" />
+            <state relative-caret-position="122">
+              <caret line="36" column="13" lean-forward="false" selection-start-line="36" selection-start-column="13" selection-end-line="36" selection-end-column="13" />
               <folding />
             </state>
           </provider>
@@ -258,16 +260,15 @@
       <workItem from="1502299106812" duration="139000" />
       <workItem from="1502300054494" duration="398000" />
       <workItem from="1502404773778" duration="491000" />
-      <workItem from="1502408002688" duration="1211000" />
+      <workItem from="1502408002688" duration="1479000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="26795000" />
+    <option name="totallyTimeSpent" value="27063000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1920" height="1173" extended-state="6" />
-    <editor active="true" />
     <layout>
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.24855188" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
@@ -687,8 +688,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="138">
-          <caret line="36" column="81" lean-forward="false" selection-start-line="36" selection-start-column="81" selection-end-line="36" selection-end-column="81" />
+        <state relative-caret-position="122">
+          <caret line="36" column="13" lean-forward="false" selection-start-line="36" selection-start-column="13" selection-end-line="36" selection-end-column="13" />
           <folding />
         </state>
       </provider>
