@@ -34,7 +34,7 @@ app.set('view engine', 'jade');
 
 // Cors declaration
 var corsOptions = {
-    origin: 'http://localhost:4200'
+    origin: ['http://localhost:4200', 'https://aqkhan.github.io/ng4-cms-frontend/']
 };
 
 app.use(cors(corsOptions));
