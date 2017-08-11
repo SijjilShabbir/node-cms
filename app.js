@@ -34,24 +34,10 @@ app.set('view engine', 'jade');
 
 // Cors declaration
 var corsOptions = {
-    origin: 'https://aqkhan.github.io/ng4-cms-frontend/'
+    origin: 'https://aqkhan.github.io/'
 };
 
-// Enable multiple domains origin
-app.use(function(req, res, next){
-    var whitelist = ['localhost:4200', 'https://aqkhan.github.io/'];
-    var host = req.get('host');
-
-    whitelist.forEach(function(val, key){
-        if (host.indexOf(val) > -1){
-            res.setHeader('Access-Control-Allow-Origin', host);
-        }
-    });
-
-    next();
-});
-
-//app.use(cors(corsOptions));
+app.use(cors(corsOptions));
 app.use(logger('dev'));
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: false }));
