@@ -3,7 +3,7 @@
         "title": "Sweet Basket",
         "excerpt": "Biscuits, Cakes & Chocolates",
         "image": "images/basket1.jpg",
-        "thumbnail_image": "",
+        "thumbnail_image": "images/logos/cadbury.png",
         "price": 10,
         "stock": 100
     },
@@ -11,7 +11,7 @@
         "title": "Muffins Basket",
         "excerpt": "Fresh baked muffins",
         "image": "images/basket6.jpg",
-        "thumbnail_image": "",
+        "thumbnail_image": "images/logos/cadbury.png",
         "price": 10,
         "stock": 100
     },
@@ -19,7 +19,7 @@
         "title": "Dry fruit basket",
         "excerpt": "Pistashew, Almonds & Walnuts",
         "image": "images/basket4.jpg",
-        "thumbnail_image": "",
+        "thumbnail_image": "images/logos/cadbury.png",
         "price": 10,
         "stock": 100
     },
@@ -27,7 +27,7 @@
         "title": "Chocolate Basket",
         "excerpt": "Cadbury, Govida & Oreo",
         "image": "images/basket7.jpg",
-        "thumbnail_image": "",
+        "thumbnail_image": "images/logos/cadbury.png",
         "price": 10,
         "stock": 100
     }
