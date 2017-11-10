@@ -1,0 +1,34 @@
+[
+    {
+        "title": "Sweet Basket",
+        "excerpt": "Biscuits, Cakes & Chocolates",
+        "image": "basket1.jpg",
+        "thumbnail_image": "",
+        "price": 10,
+        "stock": 100
+    },
+    {
+        "title": "Muffins Basket",
+        "excerpt": "Fresh baked muffins",
+        "image": "basket6.jpg",
+        "thumbnail_image": "",
+        "price": 10,
+        "stock": 100
+    },
+    {
+        "title": "Dry fruit basket",
+        "excerpt": "Pistashew, Almonds & Walnuts",
+        "image": "basket4.jpg",
+        "thumbnail_image": "",
+        "price": 10,
+        "stock": 100
+    },
+    {
+        "title": "Chocolate Basket",
+        "excerpt": "Cadbury, Govida & Oreo",
+        "image": "basket4.jpg",
+        "thumbnail_image": "",
+        "price": 10,
+        "stock": 100
+    }
+]
